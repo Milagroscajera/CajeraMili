@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PALACE ONLINE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial Bold', sans-serif;
+            font-family: 'Playfair Display', serif; /* Fuente en negrita y estética */
             background-image: url('JUGÁ EN JOKER ARGENTINA, EL MEJOR CASINO ONLINE!.jpg'); /* Imagen de fondo */
             background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
             background-position: center; /* Centra la imagen de fondo */
@@ -16,17 +17,28 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-     
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con algo de transparencia */
+            padding: 20px;
+            border-radius: 15px; /* Bordes redondeados más grandes */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra los elementos hijos horizontalmente */
+            border: 3px solid #d4af37; /* Borde dorado */
         }
         h1 {
-            color: #333333;
-            font-size: 2rem;
+            color: #ffffff; /* Texto del título en blanco */
+            font-size: 3rem; /* Tamaño del texto del título */
+            margin-bottom: 20px; /* Espacio debajo del título */
         }
         p {
-            color: #666666;
+            color: #ffffff; /* Texto del párrafo en blanco */
         }
         .whatsapp-button {
-            background-color: #8c121a;
+            background-color: #25d366;
             color: white;
             padding: 15px 30px;
             font-size: 18px;
@@ -36,6 +48,7 @@
             cursor: pointer;
             display: inline-flex;
             align-items: center;
+            border: 2px solid #d4af37; /* Borde dorado del botón */
         }
         .whatsapp-button img {
             margin-right: 10px; /* Espacio entre la imagen y el texto */
@@ -43,21 +56,25 @@
             height: 24px; /* Ajusta el tamaño de la imagen */
         }
         .whatsapp-button:hover {
-            background-color: #8c121a;
+            background-color: #128c7e;
+            border-color: #a67c00; /* Color dorado más oscuro en hover */
         }
         .logo {
             margin-top: 20px;
-            max-width: 150px;
+            max-width: 300px; /* Ajusta el tamaño máximo del logo */
+            display: block; /* Asegura que la imagen sea un bloque */
+            margin-left: auto; /* Centro horizontalmente */
+            margin-right: auto; /* Centro horizontalmente */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Logo en la página -->
+        <!-- Logo grande y centrado -->
         <img src="ganaencasa.net (5).jpg" alt="Logo" class="logo">
 
-        <h1>BIENVENIDOS A PALACE ONLINE</h1>
-        <p>Minimo de carga: $1000 - Minimo de retiro: $5000</p>
+        <h1>PALACE ONLINE</h1>
+        <p>Minimo de retiro: $5000 -- Minimo de carga: $1000 </p>
         
         <!-- Botón de WhatsApp con imagen -->
         <a href="https://wa.me/5492645582448/?text=Hola%2C%20me%20gustaría%20saber%20más%20información" class="whatsapp-button">
