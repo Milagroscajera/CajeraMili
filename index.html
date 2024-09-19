@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PALACE ONLINE</title>
+    <title>PALACE Online</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap'); /* Fuente de estilo casino */
+
         body {
             font-family: 'Arial', sans-serif; /* Fuente Arial */
             font-weight: bold; /* Fuente en negrita */
@@ -30,10 +32,11 @@
             flex-direction: column;
             align-items: center; /* Centra los elementos hijos horizontalmente */
             border: 3px solid #d4af37; /* Borde dorado */
-            max-width: 400px; /* Tamaño máximo en píxeles */
-            max-height: 500px; /* Tamaño máximo en píxeles */
+            width: 400px; /* Ancho exacto */
+            height: 500px; /* Alto exacto */
         }
         h1 {
+            font-family: 'Luckiest Guy', cursive; /* Fuente de estilo casino */
             color: #ffffff; /* Texto del título en blanco */
             font-size: 2.5rem; /* Tamaño del texto del título */
             margin-bottom: 20px; /* Espacio debajo del título */
@@ -41,16 +44,26 @@
         p {
             color: #ffffff; /* Texto del párrafo en blanco */
         }
-        .whatsapp-image {
-            display: block;
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            background-color: #25D366; /* Color de fondo verde de WhatsApp */
+            color: #ffffff; /* Texto en blanco */
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem; /* Tamaño de letra más grande */
+            font-family: 'Arial', sans-serif; /* Fuente Arial en negrita */
             margin-top: 20px;
-            max-width: 150px; /* Tamaño máximo de la imagen de WhatsApp en píxeles */
-            border: 2px solid #d4af37; /* Borde dorado de la imagen */
-            border-radius: 5px; /* Bordes redondeados de la imagen */
+        }
+        .whatsapp-button img {
+            margin-right: 10px;
+            width: 24px; /* Tamaño del ícono de WhatsApp */
         }
         .logo {
             margin-top: 20px;
-            max-width: 200px; /* Tamaño máximo del logo para hacerlo más pequeño */
+            max-width: 200px; /* Ajusta el tamaño máximo del logo */
             display: block; /* Asegura que la imagen sea un bloque */
             margin-left: auto; /* Centro horizontalmente */
             margin-right: auto; /* Centro horizontalmente */
@@ -59,15 +72,15 @@
 </head>
 <body>
     <div class="container">
-        <!-- Logo un poco más pequeño y centrado -->
-        <img src="logo.png" alt="Logo" class="logo">
+        <!-- Logo centrado -->
+        <img src="ganaencasa.net (3).png" alt="Logo" class="logo">
 
         <h1></h1>
         <p></p>
         
-        <!-- Imagen de enlace de WhatsApp -->
-        <a href="https://wa.me/5215555555555/?text=Hola%2C%20me%20gustaría%20saber%20más%20información">
-            <img src="ganaencasa.net (1).png" alt="WhatsApp" class="whatsapp-image">
+        <!-- Botón de WhatsApp con texto e ícono -->
+        <a href="https://wa.me/5215555555555/?text=Hola%2C%20me%20gustaría%20saber%20más%20información" class="whatsapp-button">
+            <img src="ganaencasa.net (1).png" alt="WhatsApp Icon"> QUIERO CREAR MI USUARIO
         </a>
     </div>
 </body>
