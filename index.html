@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casino Online</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif; /* Fuente Arial */
-            font-weight: bold; /* Fuente en negrita */
-            background-image: url('ganaencasa.net (4).jpg'); /* Imagen de fondo */
-            background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
-            background-position: center; /* Centra la imagen de fondo */
+        /* Reset de márgenes y paddings por defecto */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            background-image: url('ganaencasa.net (4).jpg');
+            background-size: cover;
+            background-position: center;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,27 +25,29 @@
         }
 
         .container {
-            background-image: url('CON4.jpg'); /* Imagen de fondo del contenedor */
-            background-size: cover; /* Ajusta la imagen para cubrir el contenedor */
-            background-position: center; /* Centra la imagen de fondo del contenedor */
+            background-image: url('CON4.jpg');
+            background-size: cover;
+            background-position: center;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border: 3px solid #d4af37;
+            width: 400px;
+            height: 500px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            border: 3px solid #d4af37; /* Borde dorado */
-            width: 400px; /* Ancho fijo */
-            height: 500px; /* Alto fijo */
-            box-sizing: border-box;
+        }
+
+        .content {
+            text-align: center;
         }
 
         h1 {
             color: #ffffff;
-            font-size: 2rem;
-            margin: 10px 0;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
         }
 
         p {
@@ -50,14 +57,10 @@
         }
 
         .whatsapp-button {
-            background-color: transparent;
-            border: none;
+            width: 100%;
+            max-width: 300px;
             cursor: pointer;
-            display: inline-flex;
-            justify-content: center;
             transition: transform 0.3s;
-            padding: 0;
-            width: 300px;
         }
 
         .whatsapp-button img {
@@ -70,17 +73,17 @@
             transform: scale(1.05);
         }
 
-        /* Media Queries para pantallas más pequeñas */
+        /* Media Queries para Responsividad */
         @media (max-width: 600px) {
             .container {
                 width: 90%;
-                height: auto; /* Ajusta la altura en dispositivos más pequeños */
+                height: auto;
                 max-width: 400px;
                 padding: 15px;
             }
 
             h1 {
-                font-size: 1.75rem;
+                font-size: 1.6rem;
             }
 
             p {
@@ -92,15 +95,37 @@
                 max-width: 100%;
             }
         }
+
+        @media (max-width: 400px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+                margin-bottom: 10px;
+            }
+
+            .whatsapp-button {
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1></h1>
-        <p></p>
-        
+        <div class="content">
+            <h1></h1>
+            <p></p>
+        </div>
         <a href="https://wa.me/5215555555555" class="whatsapp-button" target="_blank">
-            <img src="Diseño sin título.png" alt="Quiero Crear Mi Usuario">
+            <!-- Reemplaza 'tu-imagen.png' con la ruta de tu imagen personalizada -->
+            <img src="Diseño sin título.png" alt="">
         </a>
     </div>
 </body>
