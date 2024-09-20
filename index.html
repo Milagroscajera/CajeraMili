@@ -24,15 +24,14 @@
             background-position: center; /* Centra la imagen de fondo del contenedor */
             padding: 2rem;
             border-radius: 10px; /* Bordes redondeados */
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
             text-align: center;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Centra los elementos hijos horizontalmente */
+            align-items: center; /* Centra los elementos horizontalmente */
             border: 3px solid #d4af37; /* Borde dorado */
             width: 90%;
             max-width: 400px; /* Ancho máximo para pantallas grandes */
-            /* Eliminamos la altura fija para permitir que el contenido determine la altura */
             box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
         }
         h1 {
@@ -46,39 +45,23 @@
             font-size: 1rem; /* Tamaño del texto del párrafo */
         }
         .whatsapp-button {
-            background-color: #25d366;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            font-size: 1rem;
-            text-decoration: none;
-            border-radius: 5px;
-            border: 2px solid #d4af37; /* Borde dorado del botón */
+            background-color: transparent; /* Fondo transparente para usar solo la imagen */
+            border: none; /* Sin borde */
             cursor: pointer;
             display: inline-flex;
             align-items: center;
-            transition: background-color 0.3s, border-color 0.3s;
+            transition: transform 0.3s;
             margin-top: auto; /* Mantiene el botón en la parte inferior */
-            width: 100%; /* Hace que el botón ocupe el 100% del contenedor */
+            padding: 0; /* Elimina el padding */
+        }
+        .whatsapp-button img {
+            width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
             max-width: 300px; /* Ancho máximo para pantallas grandes */
             box-sizing: border-box;
         }
-        .whatsapp-button img {
-            margin-right: 0.5rem; /* Espacio entre la imagen y el texto */
-            width: 1.5rem; /* Ajusta el tamaño de la imagen */
-            height: 1.5rem; /* Ajusta el tamaño de la imagen */
-        }
         .whatsapp-button:hover {
-            background-color: #128c7e;
-            border-color: #a67c00; /* Color dorado más oscuro en hover */
-        }
-        .logo {
-            margin-top: 0; /* Elimina el margen superior */
-            max-width: 50%; /* Ajusta el tamaño máximo del logo para hacerlo más pequeño */
-            height: auto; /* Mantiene la proporción del logo */
-            display: block; /* Asegura que la imagen sea un bloque */
-            margin-left: auto; /* Centro horizontalmente */
-            margin-right: auto; /* Centro horizontalmente */
-            margin-bottom: 1.5rem; /* Espacio debajo del logo */
+            transform: scale(1.05); /* Efecto de ampliación al pasar el mouse */
         }
 
         /* Media Queries para pantallas más pequeñas */
@@ -94,18 +77,8 @@
                 font-size: 0.9rem;
                 margin-bottom: 1rem;
             }
-            .whatsapp-button {
-                padding: 0.6rem 1.2rem;
-                font-size: 0.9rem;
-                max-width: 100%;
-            }
             .whatsapp-button img {
-                width: 1.2rem;
-                height: 1.2rem;
-            }
-            .logo {
-                max-width: 60%; /* Ajusta el tamaño del logo en pantallas pequeñas */
-                margin-bottom: 1rem;
+                max-width: 100%; /* Ajusta el ancho máximo */
             }
         }
 
@@ -122,33 +95,23 @@
                 font-size: 0.8rem;
                 margin-bottom: 0.75rem;
             }
-            .whatsapp-button {
-                padding: 0.5rem 1rem;
-                font-size: 0.8rem;
-            }
             .whatsapp-button img {
-                width: 1rem;
-                height: 1rem;
-            }
-            .logo {
-                max-width: 70%;
-                margin-bottom: 0.75rem;
+                max-width: 100%; /* Ajusta el ancho máximo */
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Logo más pequeño y centrado -->
-        <img src="ganaencasa.net (3).png" alt="Logo" class="logo">
+        <!-- Se elimina el logo -->
 
         <h1></h1>
         <p></p>
         
-        <!-- Botón de WhatsApp con imagen -->
-        <a href="https://wa.me/5215555555555/?text=Hola%2C%20me%20gustaría%20saber%20más%20información" class="whatsapp-button">
-            <img src="ganaencasa.net (1).png" alt="WhatsApp Icon">
-            QUIERO CREAR MI USUARIO
+        <!-- Botón de WhatsApp con imagen personalizada -->
+        <a href="https://wa.me/5215555555555" class="whatsapp-button" target="_blank">
+            <!-- Reemplaza 'tu-imagen.png' con la ruta de tu imagen personalizada -->
+            <img src="Diseño sin título.png" alt="">
         </a>
     </div>
 </body>
