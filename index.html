@@ -34,7 +34,7 @@
             border: 3px solid #d4af37; /* Borde dorado */
             width: 400px; /* Ancho exacto */
             height: 500px; /* Alto exacto */
-            position: relative; /* Necesario para la posición del logo */
+            position: relative; /* Necesario para la posición del botón */
         }
         h1 {
             font-family: 'Luckiest Guy', cursive; /* Fuente de estilo casino */
@@ -44,6 +44,7 @@
         }
         p {
             color: #ffffff; /* Texto del párrafo en blanco */
+            margin-bottom: 40px; /* Espacio para el botón */
         }
         .whatsapp-button {
             display: inline-flex;
@@ -51,7 +52,7 @@
             justify-content: center; /* Centra el contenido horizontalmente */
             background-color: #25D366; /* Color de fondo verde de WhatsApp */
             color: #ffffff; /* Texto en blanco */
-            padding: 10px 80px; /* Padding ajustado para hacer el botón más largo */
+            padding: 10px 30px; /* Padding ajustado para hacer el botón más largo */
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
@@ -61,10 +62,13 @@
             bottom: 20px; /* Ubica el botón en la parte inferior del contenedor */
             left: 50%;
             transform: translateX(-50%); /* Centra el botón horizontalmente */
+            white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+            min-width: 200px; /* Asegura un ancho mínimo para el botón */
         }
         .whatsapp-button img {
             margin-right: 10px;
             width: 24px; /* Tamaño del ícono de WhatsApp */
+            height: 24px; /* Asegura que la imagen mantenga su proporción */
         }
         .logo {
             margin-top: 0; /* Elimina el margen superior del logo */
@@ -74,6 +78,29 @@
             margin-right: auto; /* Centro horizontalmente */
             position: relative;
             top: -20px; /* Mueve el logo hacia arriba */
+        }
+
+        /* Responsivo para pantallas más pequeñas */
+        @media (max-width: 450px) {
+            .container {
+                width: 90%;
+                height: auto; /* Permite que el contenedor ajuste su altura según el contenido */
+            }
+            .whatsapp-button {
+                padding: 10px 20px;
+                font-size: 1rem;
+                min-width: 150px;
+            }
+            .logo {
+                max-width: 150px;
+                top: -15px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                margin-bottom: 30px;
+            }
         }
     </style>
 </head>
