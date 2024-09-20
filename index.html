@@ -1,4 +1,23 @@
-<!DOCTYPE html>
+[0:01, 20/9/2024] Joaquin: <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugá en Palace</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap'); /* Fuente de estilo casino */
+
+        body {
+            font-family: 'Arial', sans-serif; /* Fuente Arial */
+            font-weight: bold; /* Fuente en negrita */
+            background-image: url('ganaencasa.net (4).jpg'); /* Imagen de fondo */
+            background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+            background-position: center; /* Centra la imagen de fondo */
+            margin: 0;
+            padding: 0;
+            display: flex;
+     …
+[8:13, 20/9/2024] Joaquin: <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -18,55 +37,61 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh; /* Asegura que el body ocupe al menos el alto de la ventana */
         }
         .container {
             background-image: url('CON4.jpg'); /* Imagen de fondo del contenedor */
             background-size: cover; /* Ajusta la imagen para cubrir el contenedor */
             background-position: center; /* Centra la imagen de fondo del contenedor */
             padding: 20px;
-            border-radius: 10px; /* Bordes redondeados más pequeños */
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center; /* Centra los elementos hijos horizontalmente */
             border: 3px solid #d4af37; /* Borde dorado */
             width: 400px; /* Ancho exacto */
+            max-width: 90%; /* Hace que el contenedor sea responsivo */
             height: 500px; /* Alto exacto */
             position: relative; /* Necesario para la posición del botón */
+            overflow: hidden; /* Evita que el contenido sobresalga */
         }
         h1 {
             font-family: 'Luckiest Guy', cursive; /* Fuente de estilo casino */
             color: #ffffff; /* Texto del título en blanco */
             font-size: 2.5rem; /* Tamaño del texto del título */
-            margin-bottom: 20px; /* Espacio debajo del título */
+            margin-bottom: 10px; /* Espacio debajo del título */
         }
         p {
             color: #ffffff; /* Texto del párrafo en blanco */
-            margin-bottom: 40px; /* Espacio para el botón */
+            margin-bottom: 80px; /* Espacio para el botón */
+            padding: 0 10px; /* Evita que el texto toque los bordes */
+            font-size: 1rem; /* Tamaño de fuente legible */
+            line-height: 1.5; /* Mejor legibilidad */
         }
         .whatsapp-button {
             position: absolute;
             bottom: 20px; /* Ubica el botón en la parte inferior del contenedor */
             left: 50%;
             transform: translateX(-50%); /* Centra el botón horizontalmente */
+            display: block; /* Asegura que el enlace ocupe el espacio adecuado */
         }
         .whatsapp-button img {
-            width: 150px; /* Ajusta el tamaño de la imagen del botón */
+            width: 200px; /* Aumenta el tamaño de la imagen del botón */
             height: auto; /* Mantiene la proporción de la imagen */
             border: 2px solid #d4af37; /* Borde dorado alrededor de la imagen */
             border-radius: 5px; /* Bordes redondeados */
             cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
         }
         .logo {
-            margin-top: 0; /* Elimina el margen superior del logo */
+            margin-top: -40px; /* Mueve el logo hacia arriba dentro del contenedor */
             max-width: 200px; /* Ajusta el tamaño máximo del logo */
             display: block; /* Asegura que la imagen sea un bloque */
             margin-left: auto; /* Centro horizontalmente */
             margin-right: auto; /* Centro horizontalmente */
             position: relative;
-            top: -20px; /* Mueve el logo hacia arriba */
         }
 
         /* Responsivo para pantallas más pequeñas */
@@ -74,19 +99,21 @@
             .container {
                 width: 90%;
                 height: auto; /* Permite que el contenedor ajuste su altura según el contenido */
+                padding: 15px;
             }
             .whatsapp-button img {
-                width: 120px; /* Ajusta el tamaño de la imagen del botón para pantallas pequeñas */
+                width: 150px; /* Ajusta el tamaño de la imagen del botón para pantallas pequeñas */
             }
             .logo {
                 max-width: 150px;
-                top: -15px;
+                margin-top: -30px; /* Ajusta la posición del logo para pantallas pequeñas */
             }
             h1 {
                 font-size: 2rem;
             }
             p {
-                margin-bottom: 30px;
+                margin-bottom: 60px;
+                font-size: 0.9rem;
             }
         }
     </style>
