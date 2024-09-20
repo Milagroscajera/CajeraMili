@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Alinea el ancho del viewport con el ancho del contenedor -->
+    <meta name="viewport" content="width=400, initial-scale=1.0">
     <title>Casino Online</title>
     <style>
         /* Reset de márgenes y paddings por defecto */
@@ -15,105 +16,67 @@
         body {
             font-family: 'Arial', sans-serif;
             font-weight: bold;
-            background-image: url('ganaencasa.net (4).jpg');
-            background-size: cover;
-            background-position: center;
+            background-image: url('ganaencasa.net (4).jpg'); /* Imagen de fondo */
+            background-size: cover; /* Cubre toda la pantalla */
+            background-position: center; /* Centra la imagen de fondo */
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            overflow: auto; /* Permite scroll si el contenedor excede la pantalla */
         }
 
         .container {
-            background-image: url('CON4.jpg');
-            background-size: cover;
-            background-position: center;
+            background-image: url('CON4.jpg'); /* Imagen de fondo del contenedor */
+            background-size: cover; /* Cubre todo el contenedor */
+            background-position: center; /* Centra la imagen de fondo */
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            border: 3px solid #d4af37;
-            width: 400px;
-            height: 500px;
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+            border: 3px solid #d4af37; /* Borde dorado */
+            width: 400px; /* Ancho fijo */
+            height: 500px; /* Alto fijo */
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: space-between; /* Distribuye espacio entre elementos */
+            align-items: center; /* Centra los elementos horizontalmente */
         }
 
         .content {
             text-align: center;
+            flex-grow: 1; /* Permite que el contenido ocupe el espacio disponible */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centra verticalmente el contenido */
         }
 
         h1 {
             color: #ffffff;
-            font-size: 1.8rem;
-            margin-bottom: 10px;
+            font-size: 24px; /* Tamaño de fuente fijo */
+            margin-bottom: 10px; /* Espacio debajo del título */
         }
 
         p {
             color: #ffffff;
-            font-size: 1rem;
-            margin-bottom: 20px;
+            font-size: 16px; /* Tamaño de fuente fijo */
+            margin-bottom: 20px; /* Espacio debajo del párrafo */
         }
 
         .whatsapp-button {
             width: 100%;
-            max-width: 300px;
+            max-width: 300px; /* Ancho máximo para pantallas grandes */
             cursor: pointer;
-            transition: transform 0.3s;
+            transition: transform 0.3s; /* Transición suave al hacer hover */
         }
 
         .whatsapp-button img {
-            width: 100%;
-            height: auto;
+            width: auto;
+            max-height: 50px; /* Limita la altura de la imagen para evitar que ocupe demasiado espacio */
             display: block;
         }
 
         .whatsapp-button:hover {
-            transform: scale(1.05);
-        }
-
-        /* Media Queries para Responsividad */
-        @media (max-width: 600px) {
-            .container {
-                width: 90%;
-                height: auto;
-                max-width: 400px;
-                padding: 15px;
-            }
-
-            h1 {
-                font-size: 1.6rem;
-            }
-
-            p {
-                font-size: 0.9rem;
-                margin-bottom: 15px;
-            }
-
-            .whatsapp-button {
-                max-width: 100%;
-            }
-        }
-
-        @media (max-width: 400px) {
-            .container {
-                width: 95%;
-                padding: 10px;
-            }
-
-            h1 {
-                font-size: 1.5rem;
-            }
-
-            p {
-                font-size: 0.8rem;
-                margin-bottom: 10px;
-            }
-
-            .whatsapp-button {
-                max-width: 100%;
-            }
+            transform: scale(1.05); /* Efecto de ampliación al pasar el mouse */
         }
     </style>
 </head>
