@@ -2,11 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <!-- Alinea el ancho del viewport con el ancho del contenedor -->
     <meta name="viewport" content="width=400, initial-scale=1.0">
     <title>Casino Online</title>
     <style>
-        /* Reset de márgenes y paddings por defecto */
         * {
             margin: 0;
             padding: 0;
@@ -16,80 +14,69 @@
         body {
             font-family: 'Arial', sans-serif;
             font-weight: bold;
-            background-image: url('ganaencasa.net (4).jpg'); /* Imagen de fondo */
-            background-size: cover; /* Cubre toda la pantalla */
-            background-position: center; /* Centra la imagen de fondo */
+            background-image: url('ganaencasa.net (4).jpg');
+            background-size: cover;
+            background-position: center;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            overflow: auto; /* Permite scroll si el contenedor excede la pantalla */
+            overflow: auto;
         }
 
         .container {
-            background-image: url('CON4.jpg'); /* Imagen de fondo del contenedor */
-            background-size: cover; /* Cubre todo el contenedor */
-            background-position: center; /* Centra la imagen de fondo */
+            background-image: url('CON4.jpg');
+            background-size: cover;
+            background-position: center;
             padding: 20px;
-            border-radius: 10px; /* Bordes redondeados */
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-            border: 3px solid #d4af37; /* Borde dorado */
-            width: 400px; /* Ancho fijo */
-            height: 500px; /* Alto fijo */
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border: 3px solid #d4af37;
+            width: 400px;
+            height: 500px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Distribuye espacio entre elementos */
-            align-items: center; /* Centra los elementos horizontalmente */
+            justify-content: space-between;
+            align-items: center;
         }
 
         .content {
             text-align: center;
-            flex-grow: 1; /* Permite que el contenido ocupe el espacio disponible */
+            flex-grow: 1;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Centra verticalmente el contenido */
+            justify-content: center;
         }
 
         h1 {
             color: #ffffff;
-            font-size: 24px; /* Tamaño de fuente fijo */
-            margin-bottom: 10px; /* Espacio debajo del título */
+            font-size: 24px;
+            margin-bottom: 10px;
         }
 
         p {
             color: #ffffff;
-            font-size: 16px; /* Tamaño de fuente fijo */
-            margin-bottom: 20px; /* Espacio debajo del párrafo */
+            font-size: 16px;
+            margin-bottom: 20px;
         }
 
         .whatsapp-button {
-    background-color: #25d366;
-    color: white;
-    padding: 25px 50px; /* Aumenta el tamaño del botón */
-    font-size: 24px; /* Ajusta el tamaño de la fuente */
-    text-decoration: none;
-    border-radius: 10px;
-    border: 2px solid #d4af37;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center; /* Centrar el botón */
-    transform: scale(2.5); /* Aumenta el tamaño total del botón */
-    position: absolute;
-    bottom: 50px; /* Ajusta la posición vertical */
-    left: 50%;
-    transform: translateX(-50%) scale(2.5); /* Centra horizontalmente */
-}
+            width: 100%;
+            max-width: 300px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            display: flex; /* Para centrar el contenido */
+            justify-content: center; /* Centra el botón */
+        }
 
-.whatsapp-button img {
-    margin-right: 10px;
-    width: 48px; /* Aumenta el tamaño de la imagen */
-    height: 48px;
-}
+        .whatsapp-button img {
+            width: auto;
+            max-height: 100px; /* Aumenta el tamaño del botón */
+            display: block;
         }
 
         .whatsapp-button:hover {
-            transform: scale(1.05); /* Efecto de ampliación al pasar el mouse */
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -100,7 +87,6 @@
             <p></p>
         </div>
         <a href="https://wa.me/5215555555555" class="whatsapp-button" target="_blank">
-            <!-- Reemplaza 'tu-imagen.png' con la ruta de tu imagen personalizada -->
             <img src="Diseño sin título.png" alt="">
         </a>
     </div>
